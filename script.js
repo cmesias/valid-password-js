@@ -14,6 +14,7 @@
 
 // isValidPassword('dogLuvr123!' 'dogLuvr'); // false
 
+/// Method 1 ///
 function isValidPassword (password, username)
 {
     // Ensure password length is at least 8 characters
@@ -51,3 +52,38 @@ function isValidPassword (password, username)
         return false;
     }
 }
+
+/// Method 2 ///
+// function isValidPassword (password, username)
+// {
+//     // Invalid password return false:
+//     //  - If password less than 8 characters
+//     //  - Includes spaces
+//     //  - Includes username
+//     if (password.length < 8 || password.includes(' ') || password.includes(username)) {
+//         return false;
+//     }
+
+//     // Valid password, return true
+//     else {
+//         return true;
+//     }
+// }
+
+/// Method 3 ///
+// function isValidPassword (password, username)
+// {
+//     // Invalid password return false:
+//     //  - If password less than 8 characters
+//     //  - Includes spaces
+//     //  - Includes username
+//     let tooShort = password.length < 8;
+//     let hasSpaces = password.includes(' ');
+//     let tooSimilar = password.includes(username);
+
+//     if (tooShort || hasSpaces || tooSimilar) {
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
