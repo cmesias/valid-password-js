@@ -81,9 +81,6 @@ function isValidPassword (password, username)
 //     let hasSpaces = password.includes(' ');
 //     let tooSimilar = password.includes(username);
 
-//     if (tooShort || hasSpaces || tooSimilar) {
-//         return false;
-//     } else {
-//         return true;
-//     }
+//     if (tooShort || hasSpaces || tooSimilar) return false;
+//     return true;
 // }
